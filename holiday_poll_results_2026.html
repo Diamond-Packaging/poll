@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Floating Holiday Poll Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+        
+        .winner-badge {
+            background: linear-gradient(45deg, #f39c12, #e67e22);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .results {
+            text-align: left;
+        }
+        
+        .result-item {
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .result-item.winner {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+            color: white;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+        }
+        
+        .holiday-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .holiday-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .holiday-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+        .vote-count {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #3498db;
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+        
+        .result-item.winner .progress-fill {
+            background: rgba(255,255,255,0.8);
+        }
+        
+        .crown {
+            position: absolute;
+            top: -5px;
+            right: 15px;
+            font-size: 2em;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        .percentage {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+ <img src="Diamond-logo-PMS-288-blue-2019.png" alt="Diamond Packaging Logo" style="max-width: 250px; margin-bottom: 20px;">
+    
+            <h1 class="title">🗳️ 2026 Floating Holiday Poll Results</h1>
+            <p class="subtitle">Thank you to all employees who participated!</p>
+            <div class="winner-badge">🏆 Winner: Day after New Year's Day</div>
+        </div>
+        
+        <div class="results">
+            <div class="result-item winner">
+                <div class="crown">👑</div>
+                <div class="holiday-info">
+                    <div class="holiday-name">
+                        <span class="holiday-icon">🎉</span>
+                        Day after New Year's Day
+                    </div>
+                    <div class="vote-count">101 votes</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 55%"></div>
+                </div>
+                <div class="percentage">55% of total votes</div>
+            </div>
+            
+            <div class="result-item">
+                <div class="holiday-info">
+                    <div class="holiday-name">
+                        <span class="holiday-icon">🟢🔴⚫</span>
+                        Juneteenth
+                    </div>
+                    <div class="vote-count">42 votes</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 23%"></div>
+                </div>
+                <div class="percentage">23% of total votes</div>
+            </div>
+            
+            <div class="result-item">
+                <div class="holiday-info">
+                    <div class="holiday-name">
+                        <span class="holiday-icon">🎆</span>
+                        New Year's Eve
+                    </div>
+                    <div class="vote-count">29 votes</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 16%"></div>
+                </div>
+                <div class="percentage">16% of total votes</div>
+            </div>
+            
+            <div class="result-item">
+                <div class="holiday-info">
+                    <div class="holiday-name">
+                        <span class="holiday-icon">🏛️</span>
+                        Presidents Day
+                    </div>
+                    <div class="vote-count">11 votes</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 6%"></div>
+                </div>
+                <div class="percentage">6% of total votes</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Total Votes:</strong> 183 employees participated</p>
+            <p>📅 <strong>Your 2026 floating holiday:</strong> Thursday, January 2, 2026</p>
+            <p>Enjoy your extended New Year's weekend! 🎉</p>
+        </div>
+    </div>
+</body>
+</html>
